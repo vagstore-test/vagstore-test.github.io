@@ -1,0 +1,607 @@
+@font-face{font-family: "VWHeadlineOT-Black";src: url(../fonts/VWHeadlineOT-Black.ttf);font-style: normal;font-weight: normal;}
+@font-face{font-family: "VWHeadlineOT-Book";src: url(../fonts/VWHeadlineOT-Book.ttf);font-style: normal;font-weight: normal;}
+@font-face{font-family: "VWHeadlineOT-Semibold";src: url(../fonts/VWHeadlineOT-Semibold.ttf);font-style: normal;font-weight: normal;}
+
+*{
+	box-sizing: border-box;
+	font-family: VWHeadlineOT-Black;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #E6E6E6;
+
+}
+p{
+	margin: 0;
+}
+
+/* первый экран */
+
+.main{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	height: 100vh;
+	min-height: 600px;
+	background-image: url(../img/3.jpg) ;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.main-description{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	/* flex-direction: column; для адаптива */
+	align-items: center;
+	width: 88%;
+	height: 10vh;
+	right: 0;
+}
+
+.description-call{
+	color: #fff;
+	font-size: 21px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.headline-text{
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+	text-decoration: none;
+}
+.headline-text:hover{
+	color: #5CB8DF;
+	text-decoration:none;
+
+	
+}
+.main-text{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+.main-text h1{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-size: 50px;
+}
+.main-text p{
+	font-size: 28px;
+}
+.main-text span{
+	font-size: 22px;
+	margin: 0;
+}
+.main-text span::after{
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+.main-text span::before{
+	content: '';
+	width: 20px;
+	height: 1px;
+	background-color: #fff;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+.main-button{
+	height: 15vh;
+	transition: all 0.3s ease;
+}
+.main-button a{
+	display: block;
+	background-color: #0099DA;
+	color: #fff;
+	font-family: VWHeadlineOT-Black;
+	padding: 15px 30px;
+	border-radius: 50px;
+	text-decoration: none;
+	transition: all 0.3s ease;
+
+}
+.main-button a:hover{
+	text-decoration: none;
+	background-color: #fff;
+	color: #0099DA;
+	transform: translateY(5px);
+}
+
+ /* секция о нас */
+
+.about{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+}
+.about-wrap{
+	width: 88%;
+ }
+.section-title{
+ 	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+ }
+ .section-title h2{
+ 	font-size: 30px;
+ 	text-transform: uppercase;
+ }
+.about-description{
+ 	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-evenly;
+	/* flex-direction: column; для адаптива */
+	align-items: center;
+	margin-bottom: 20px;
+}
+.about-description_text p{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	
+	width: 40vw;
+	text-align: justify;
+	font-family: VWHeadlineOT-Book;
+	line-height: 27px;
+	font-size: 16px;
+}
+.about_description_img img{
+ 	/* height: 40vh; */
+	width: 40vw;
+	margin-left: 20px;
+ 	
+}
+
+/* Основные виды работ */
+
+.servise{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	background-color: #D8D8D8;
+
+}
+.wrap{
+	width: 88%;
+}
+
+ .wrap-slider{
+ 	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+ }
+ .slider{
+ 	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	width: 88%;
+	
+
+ }
+ .slider_item{
+ 	width: 310px !important ;
+ 	text-align: center;
+ 	padding: 10px;
+ 	margin-bottom: 20px;
+ 	background-color: #fff;
+ 	border-radius: 10px;
+
+ }
+ .slider_item img{
+ 	width: 280px;
+ 	height: 310px;
+ 	margin: auto;
+ 	border-radius: 10px;
+ }
+ .slider_item p{
+ 	margin-top: 15px;
+ 	margin-bottom: 15px;
+ 	font-family: VWHeadlineOT-Book;
+
+ }
+ .slider_item span{
+ 	color: #0099DA;
+ }
+
+/* форма обратной связи */
+
+ .feedback{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	
+
+}
+.wrap{
+	width: 88%;
+}
+.feedback-wrap{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	justify-content: center;
+	align-items: center;
+	/* text-align: center; */
+}
+.content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	font-weight: 500;
+    font-size: 25px;
+    line-height: 38px;
+    letter-spacing: 0.02em;
+    margin: 0 0 40px 0;
+    background: #006EB8;
+    border-radius: 20px;
+}
+.content form{
+	text-align: center;
+
+}
+.input-wrapper{
+	display: inline-block;
+}
+.input-wrapper input{
+	width: 300px;
+	height: 50px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	outline: none;
+	font-size: 18px;
+	font-family:VWHeadlineOT-Black;
+	border: none;
+	padding: 0 10px;
+	color: #0099DA;
+
+}
+#name{
+	text-transform: capitalize;
+}
+.phone-wrapper{
+	margin-left: 20px;
+}
+
+::-webkit-input-placeholder {color:#0099DA; opacity: .5}
+::-moz-placeholder          {color:#0099DA; opacity: .5}/* Firefox 19+ */
+:-moz-placeholder           {color:#0099DA; opacity: .5}/* Firefox 18- */
+:-ms-input-placeholder      {color:#0099DA; opacity: .5}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+textarea:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+textarea:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+.email-wrapper{
+	margin-bottom: 20px;
+}
+.input-message textarea{
+	width: 700px;
+	height: 200px;
+	padding: 10px 30px;
+	border-radius:30px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	font-family:VWHeadlineOT-Black;
+	color: #0099DA;
+}
+.btn {
+  height: 50px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: #f1f5f8;
+  border: 0;
+  color: #0099DA;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 0.07em;
+  border-radius: 6px;
+  box-shadow: 0px 12px 20px 0px rgba(123, 140, 210, 0.3);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  margin-top: 20px;
+}
+.btn:hover {
+  transform: translateY(5px);
+  box-shadow: 0px 5px 10px 0px rgba(123, 140, 210, 0.3);
+}
+.btn:focus {
+  outline: 0;
+}
+
+/*Товары*/
+
+.goods{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	-justify-content: center; 
+	align-items: center;
+	background-color: #D8D8D8;
+}
+.goods-category{
+	-display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 40px;
+}
+.goods-item_slider{
+	-display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+}
+.goods-item{
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+	border: 1px solid #0099DA;
+	-display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: center;
+	-ms-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 18px;
+	color: #fff;
+	text-transform: uppercase;
+}
+.item-1{
+	background: url(../img/6.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-2{
+	background: url(../img/7.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-3{
+	background: url(../img/8.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-4{
+	background: url(../img/9.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-1 p{
+	font-size: 14px;
+	text-align: center;
+}
+
+.section-text{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 18px;
+}
+.section-text span{
+	color: red;
+}
+
+/*Карта*/
+
+.wrap-maps{
+	width: 100%;
+	
+}
+
+/* footer */
+
+footer{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+	align-items: center;
+	background-color: #006EB8;
+}
+.footer-content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around; 
+	align-items: center;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.footer-content_menu h3{
+	margin: 0;
+	color: #fff;
+}
+.line{
+	width: 64px;
+	height: 2px;
+	margin-top: 8px;
+	background-color: #fff;
+
+}
+
+.footer-content_menu ul {
+  padding: 0;
+  list-style: none;
+  
+  /* margin-top: 25% ; */
+}
+.footer-content_menu ul a {
+  display: block;
+  line-height: 2;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  font-family: VWHeadlineOT-Book;
+}
+.footer-content_menu ul a:hover {
+  transform: translateX(10px);
+}
+
+.footer-content_contact h3{
+	margin: 0;
+	color: #fff;
+}
+.contact{
+	margin-top: 30px;
+	color: #fff;
+	font-family: VWHeadlineOT-Book;
+}
+.contact p{
+	margin-bottom: 10px;
+	font-family: VWHeadlineOT-Book;
+}
+.contact span{
+	font-family: VWHeadlineOT-Book;
+}
+.contact-call{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	margin-top: 30px;
+}
+.footer-call{
+	margin-top: 10px;
+}
+.contact-call a{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	text-decoration:none;
+	color: #fff;
+	font-family: VWHeadlineOT-Book;
+}
+.contact-text img{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px;
+}
+.social-block{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+}
+.social-block a{
+	display: inline-block;
+	
+}
+.social-block img{
+	width: 40px;
+	height: 40px;
+}
+
+.vk-img{
+	margin-left: 15px;
+}
